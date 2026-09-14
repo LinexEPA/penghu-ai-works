@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>作品上傳</title><link rel="stylesheet" href="/styles.css"></head><body>
+<div class="shell"><div class="topbar"><div class="brand"><h1 id="courseName">澎湖 AI 教學作品上傳</h1><p>手機、平板、筆電皆可使用</p></div></div>
+<div id="closed" class="card hidden"><h2>🔒 本次課程已停止收件</h2><p class="muted">已上傳的作品仍保留在講師端。</p></div>
+<div id="app" class="grid hidden">
+<section class="card"><div class="field"><label>組別</label><select id="group"></select></div><div class="field"><label>作品名稱（可選填）</label><input id="title" maxlength="80" placeholder="例如：導尿無菌維持"></div>
+<div id="drop" class="drop"><div><div style="font-size:42px">＋</div><strong>選擇圖片或影片</strong><div class="muted" style="margin-top:6px">筆電可直接拖曳檔案到這裡</div><div id="limit" class="muted" style="margin-top:10px;font-size:13px"></div></div><input id="file" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime" hidden></div>
+<div class="field" style="margin-top:16px"><label class="privacy"><input id="privacy" type="checkbox"> <span>我已確認作品未包含病人姓名、病歷號、腕帶、病歷畫面、臉部等可識別個人資料。</span></label></div>
+<div id="message" class="hidden"></div><div id="progWrap" class="hidden" style="margin:14px 0"><div class="progress"><span id="prog"></span></div><div id="progText" class="muted" style="margin-top:6px">準備上傳</div></div>
+<button id="submit" class="btn primary wide" disabled>上傳作品</button><button id="again" class="btn ghost wide hidden" style="margin-top:10px">再上傳一個作品</button></section>
+<section class="card"><h2 style="margin-top:0">作品預覽</h2><div id="preview" class="preview"><span class="muted">選擇檔案後會顯示在這裡</span></div><div id="fileInfo" class="muted" style="margin-top:10px"></div></section></div></div>
+<script type="module" src="/upload.js"></script></body></html>
